@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Fitness Tracker",
+    "slug": "fitness-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fitness.tracker",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "This app needs access to your health data to track steps and activity.",
+        "NSHealthUpdateUsageDescription": "This app needs to update your health data to log workouts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.fitness.tracker",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "fitness-tracker"
+  }
+}
+
